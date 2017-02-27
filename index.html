@@ -1,0 +1,59 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+
+  <!-- to get rid of favicon request in console -->
+  <link rel="shortcut icon" href="">
+
+  <!-- P5 STUFF -->
+  <script language="javascript" type="text/javascript" src="libraries/p5.js"></script>
+  <script language="javascript" type="text/javascript" src="libraries/p5.sound.js"></script>
+  <script language="javascript" type="text/javascript" src="libraries/p5.dom.js"></script>
+  <script language="javascript" type="text/javascript" src="sketch.js"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+
+  <!-- SOCKET STUFF -->
+  <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+
+  <script type="text/javascript">
+    // PRELOAD SONGS:
+    
+    
+    /// SOCKET STUFF
+    var socket = io.connect();
+    
+    socket.on('connect', function() {
+      console.log("Connected");
+    });
+
+
+  </script>
+
+  <style> 
+  body{
+    padding: 0; 
+    margin: 0;
+    text-align: center;
+    background-image: url("disco.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  h1{
+    color:white;
+    font-family: 'Oswald', sans-serif;
+  }
+
+  p{
+    color:white;
+    font-family: 'Oswald', sans-serif;
+  }
+  </style>
+</head>
+
+<body>
+<h1>Mu$ic Maker 4Thou$and</h1>
+<P>The coolest collab music maker if it were year 2000.</P>
+<P>Click the circles to create different sounds and collab with other users.</P>
+</body>
+</html>
